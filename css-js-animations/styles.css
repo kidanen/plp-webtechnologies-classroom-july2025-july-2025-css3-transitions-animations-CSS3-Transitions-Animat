@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    color: darkblue;
+  }
+  
+  /* Part 1: Button hover animation */
+  .animated-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid darkblue;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .animated-btn:hover {
+    background-color: darkblue;
+    color: white;
+    transform: scale(1.2);
+  }
+  
+  /* Part 3: Box animation */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin-top: 20px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+  }
+  
+  /* Keyframes for extra effect */
+  @keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .jump {
+    animation: jump 0.5s ease;
+    background-color: orange;
+  }
+  
